@@ -46,7 +46,7 @@ void ExibirOpcoesDoMenu()
             AvaliarUmaBanda();
             break;
         case 4:
-            Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
+            ExibirMedia();
             break;
         case -1:
             Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
@@ -108,10 +108,39 @@ void AvaliarUmaBanda()
 
     if (bandasRegistradas.ContainsKey(nomeDaBanda))
     {
-        Console.Write("Digite a nota da banda: ");
-        int notaDaBanda = Convert.ToInt32(Console.ReadLine());
-        bandasRegistradas[nomeDaBanda].Add(notaDaBanda);
-        Console.WriteLine($"A banda {nomeDaBanda} foi avaliada com sucesso!");
+        Console.Write($"Qual a nota que a banda {nomeDaBanda} merece: ");
+        int nota = Convert.ToInt32(Console.ReadLine()!);
+        bandasRegistradas[nomeDaBanda].Add(nota);
+        Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda {nomeDaBanda}");
+        Thread.Sleep(4000);
+        Console.Clear();
+        ExibirOpcoesDoMenu();
+    }
+    else
+    {
+        Console.WriteLine($"\n A banda {nomeDaBanda} não foi encontrada!");
+        Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+        Console.ReadKey();
+        Console.Clear();
+        ExibirOpcoesDoMenu();
+    }
+}
+
+void ExibirMedia()
+{
+    Console.Clear();
+    ExibirTituloDaOpcao("Exibir média da banda");
+    Console.Write("Digite o nome da banda que deseja exibir a média: ");
+    string nomeDaBanda = Console.ReadLine()!;
+
+    if (bandasRegistradas.ContainsKey (nomeDaBanda))
+    {
+        List<int> notasDaBanda = bandasRegistradas[nomeDaBanda];
+        Console.WriteLine($"A média da banda {nomeDaBanda} é {notasDaBanda.Average()}.");
+        Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
+        Console.ReadKey();
+        Console.Clear();
+        ExibirOpcoesDoMenu();
     }
     else
     {
