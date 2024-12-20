@@ -1,6 +1,10 @@
 ﻿// Screen Sound
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
-List<string> listaDasBandas = ["U2", "Beatles", "Calypso"];
+//List<string> listaDasBandas = ["U2", "Beatles", "Calypso"];
+
+Dictionary<string, List<int>> bandasRegistradas = [];
+bandasRegistradas.Add("Linkin Park", [10, 8, 6]);
+bandasRegistradas.Add("Beatles", []);
 
 void ExibirLogo()
 {
@@ -38,7 +42,8 @@ void ExibirOpcoesDoMenu()
             MostrarBandasRegistradas();
             break;
         case 3:
-            Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
+
+            AvaliarUmaBanda();
             break;
         case 4:
             Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
@@ -47,7 +52,7 @@ void ExibirOpcoesDoMenu()
             Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica);
             break;
         default:
-            Console.WriteLine("Opção inválida");
+            Console.WriteLine("Tchau Tchau");
             break;
     }
 }
@@ -58,7 +63,7 @@ void RegistrarBandas()
     ExibirTituloDaOpcao("Registro das bandas");
     Console.Write("Digite o nome da banda que deseja registrar: ");
     string nomeDaBanda = Console.ReadLine()!;
-    listaDasBandas.Add(nomeDaBanda);
+    bandasRegistradas.Add(nomeDaBanda, []);
     Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
     Thread.Sleep(2000);
     Console.Clear();
@@ -74,7 +79,7 @@ void MostrarBandasRegistradas()
     //    Console.WriteLine($"Banda : {listaDasBandas[i]}");
     //}
 
-    foreach (var banda in listaDasBandas)
+    foreach (var banda in bandasRegistradas.Keys)
     {
         Console.WriteLine($"Banda : {banda}");
     }
@@ -92,6 +97,30 @@ void ExibirTituloDaOpcao(string titulo)
     Console.WriteLine(asteriscos);
     Console.WriteLine(titulo);
     Console.WriteLine(asteriscos + "\n");
+}
+
+void AvaliarUmaBanda()
+{
+    Console.Clear();
+    ExibirTituloDaOpcao("Avaliar banda");
+    Console.Write("Digite o nome da banda que deseja avaliar: ");
+    string nomeDaBanda = Console.ReadLine()!;
+
+    if (bandasRegistradas.ContainsKey(nomeDaBanda))
+    {
+        Console.Write("Digite a nota da banda: ");
+        int notaDaBanda = Convert.ToInt32(Console.ReadLine());
+        bandasRegistradas[nomeDaBanda].Add(notaDaBanda);
+        Console.WriteLine($"A banda {nomeDaBanda} foi avaliada com sucesso!");
+    }
+    else
+    {
+        Console.WriteLine($"\n A banda {nomeDaBanda} não foi encontrada!");
+        Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+        Console.ReadKey();
+        Console.Clear();
+        ExibirOpcoesDoMenu();
+    }
 }
 
 
