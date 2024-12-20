@@ -1,0 +1,15 @@
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\bin\Debug\net8.0\PrimeiroProjeto.exe
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\bin\Debug\net8.0\PrimeiroProjeto.deps.json
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\bin\Debug\net8.0\PrimeiroProjeto.runtimeconfig.json
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\bin\Debug\net8.0\PrimeiroProjeto.dll
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\bin\Debug\net8.0\PrimeiroProjeto.pdb
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.GeneratedMSBuildEditorConfig.editorconfig
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.AssemblyInfoInputs.cache
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.AssemblyInfo.cs
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.csproj.CoreCompileInputs.cache
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.sourcelink.json
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.dll
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\obj\Debug\net8.0\refint\PrimeiroProjeto.dll
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.pdb
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\obj\Debug\net8.0\PrimeiroProjeto.genruntimeconfig.cache
+D:\03 - Projects\Alura\ScreenSound\PrimeiroProjeto\obj\Debug\net8.0\ref\PrimeiroProjeto.dll
