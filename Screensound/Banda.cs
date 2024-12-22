@@ -8,8 +8,13 @@ namespace Screensound
 {
     public class Banda
     {
+        public Banda(string nome)
+        {
+            Nome = nome;
+        }
+        public string Nome { get; }
+
         private List<Album> albums = [];
-        public string Nome { get; set; }
 
         public void AdicionarAlbum(Album album)
         {
