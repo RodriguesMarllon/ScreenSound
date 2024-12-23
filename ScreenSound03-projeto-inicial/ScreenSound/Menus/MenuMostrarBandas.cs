@@ -2,7 +2,7 @@
 
 namespace ScreenSound.Menus;
 
-internal class MenuMostrarBandasRegistradas : Menu
+internal class MenuMostrarBandas : Menu
 {
     public override void Executar(Dictionary<string, Banda> bandasRegistradas)
     {
