@@ -14,14 +14,14 @@ using (HttpClient client = new HttpClient())
         //LinqFilter.FiltrarArtistasPorGeneroMusical(musicas, "pop");
         //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Linkin Park");
 
-        var musicasPreferidasDoDaniel = new MusicasPreferidas("Daniel");
-        musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[1]);
-        musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[2]);
-        musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[3]);
-        musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[4]);
-        musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[5]);
+        //var musicasPreferidasDoDaniel = new MusicasPreferidas("Daniel");
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[1]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[2]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[3]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[4]);
+        //musicasPreferidasDoDaniel.AdicionarMusicasFavoritas(musicas[5]);
 
-        musicasPreferidasDoDaniel.ExibirMusicasFavoritas();
+        //musicasPreferidasDoDaniel.ExibirMusicasFavoritas();
 
         var musicasPreferidasEmilly = new MusicasPreferidas("Emilly");
         musicasPreferidasEmilly.AdicionarMusicasFavoritas(musicas[6]);
@@ -31,6 +31,7 @@ using (HttpClient client = new HttpClient())
         musicasPreferidasEmilly.AdicionarMusicasFavoritas(musicas[10]);
 
         musicasPreferidasEmilly.ExibirMusicasFavoritas();
+        musicasPreferidasEmilly.GerarArquivoJson();
 
     }
     catch (Exception ex)
