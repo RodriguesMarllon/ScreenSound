@@ -74,3 +74,11 @@ D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\Screen
 D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Humanizer.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\System.CodeDom.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\System.Text.Json.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
