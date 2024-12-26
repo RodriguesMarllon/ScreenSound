@@ -10,58 +10,33 @@ namespace ScreenSound.Banco;
 
 internal class ArtistaDAL
 {
+    private readonly ScreenSoundContext context;
+
+    public ArtistaDAL(ScreenSoundContext context)
+    {
+        this.context = context;
+    }
+
     public IEnumerable<Artista> Listar()
     {
-        using var context = new ScreenSoundContext();
-
         return context.Artistas.ToList();
     }
 
-    //public void Adicionar(Artista artista)
-    //{
-    //    using var connection = new ScreenSoundContext().ObterConexao();
-    //    connection.Open();
+    public void Adicionar(Artista artista)
+    {
+        context.Artistas.Add(artista);
+        context.SaveChanges();
+    }
 
-    //    string sql = "INSERT INTO Artistas (Nome, FotoPerfil, Bio) VALUES (@Nome, @perfilPadrao, @Bio)";
-    //    SqlCommand command = new SqlCommand(sql, connection);
-        
-    //    command.Parameters.AddWithValue("@nome", artista.Nome);
-    //    command.Parameters.AddWithValue("@perfilPadrao", artista.FotoPerfil);
-    //    command.Parameters.AddWithValue("@bio", artista.Bio);
+    public void Atualizar(Artista artista)
+    {
+        context.Artistas.Update(artista);
+        context.SaveChanges();
+    }
 
-    //    int retorno = command.ExecuteNonQuery();
-    //    Console.WriteLine($"Linhas afetadas: {retorno}");
-    //}
-
-    //public void Atualizar(Artista artista, int id)
-    //{
-
-    //    using var connection = new ScreenSoundContext().ObterConexao();
-    //    connection.Open();
-
-    //    string sql = "UPDATE Artistas SET Nome = @Nome, FotoPerfil = @perfilPadrao, Bio = @Bio WHERE Id = @id";
-    //    SqlCommand command = new SqlCommand(sql, connection);
-
-    //    command.Parameters.AddWithValue("@id", id);
-    //    command.Parameters.AddWithValue("@nome", artista.Nome);
-    //    command.Parameters.AddWithValue("@perfilPadrao", artista.FotoPerfil);
-    //    command.Parameters.AddWithValue("@bio", artista.Bio);
-
-    //    int retorno = command.ExecuteNonQuery();
-    //    Console.WriteLine($"Linhas afetadas: {retorno}");
-    //}
-
-    //public void Deletar(int id)
-    //{
-    //    using var connection = new ScreenSoundContext().ObterConexao();
-    //    connection.Open();
-
-    //    string sql = "DELETE FROM Artistas WHERE Id = @id";
-    //    SqlCommand command = new SqlCommand(sql, connection);
-
-    //    command.Parameters.AddWithValue("@id", id);
-
-    //    int retorno = command.ExecuteNonQuery();
-    //    Console.WriteLine($"Linhas afetadas: {retorno}");
-    //}
+    public void Deletar(Artista artista)
+    {
+        context.Artistas.Remove(artista);
+        context.SaveChanges();
+    }
 }

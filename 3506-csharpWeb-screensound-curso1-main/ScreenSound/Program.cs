@@ -4,9 +4,17 @@ using ScreenSound.Modelos;
 
 try
 {
-    var artistaDAL = new ArtistaDAL();
+    var context = new ScreenSoundContext();
+    var artistaDAL = new ArtistaDAL(context);
     
+    var novoArtista = new Artista("Gilberto Gil", "Bio Gilberto") { Id = 1006};
+
+    //artistaDAL.Adicionar(novoArtista);
+    artistaDAL.Atualizar(novoArtista);
+    artistaDAL.Deletar(novoArtista);
+
     var listaArtistas = artistaDAL.Listar();
+
 
     foreach (var artista in listaArtistas)
     {
