@@ -4,13 +4,17 @@ using ScreenSound.Modelos;
 
 try
 {
-     var connection = new Connection();
-    var listaArtistas = connection.Listar();
+    var artistaDAL = new ArtistaDAL();
+    //artistaDAL.Adicionar(new Artista("Foo Fighters", "4 lutadores"));
+    artistaDAL.Deletar(2);
+
+    var listaArtistas = artistaDAL.Listar();
 
     foreach (var artista in listaArtistas)
     {
         Console.WriteLine(artista);
     }
+
 }
 catch (Exception ex)
 {
