@@ -61,3 +61,16 @@ D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\Screen
 D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\obj\Debug\net6.0\ScreenSound.csproj.AssemblyReference.cache
 D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\obj\Debug\net6.0\ScreenSo.4E60E543.Up2Date
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\03 - Projects\Alura\ScreenSound\3506-csharpWeb-screensound-curso1-main\ScreenSound\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
