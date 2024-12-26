@@ -61,6 +61,7 @@ internal class ArtistaDAL
         string sql = "UPDATE Artistas SET Nome = @Nome, FotoPerfil = @perfilPadrao, Bio = @Bio WHERE Id = @id";
         SqlCommand command = new SqlCommand(sql, connection);
 
+        command.Parameters.AddWithValue("@id", id);
         command.Parameters.AddWithValue("@nome", artista.Nome);
         command.Parameters.AddWithValue("@perfilPadrao", artista.FotoPerfil);
         command.Parameters.AddWithValue("@bio", artista.Bio);

@@ -6,7 +6,7 @@ try
 {
     var artistaDAL = new ArtistaDAL();
     //artistaDAL.Adicionar(new Artista("Foo Fighters", "4 lutadores"));
-    artistaDAL.Deletar(2);
+    artistaDAL.Atualizar(new Artista("Foo Fighters", "5 lutadores"), 1);
 
     var listaArtistas = artistaDAL.Listar();
 
